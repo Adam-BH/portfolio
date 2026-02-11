@@ -20,14 +20,14 @@ A jaw-dropping developer portfolio packed with interactive 3D animations, butter
 
 ## 🛠️ Tech Stack
 
-| Layer | Technologies |
-|---|---|
-| **Framework** | Next.js 14, React 18, TypeScript |
-| **Styling** | Tailwind CSS, Shadcn UI, Aceternity UI |
-| **Animation** | GSAP, Framer Motion |
-| **3D** | Spline Runtime |
-| **Email** | Resend |
-| **Misc** | Lenis (smooth scroll), Zod, next-themes |
+| Layer         | Technologies                            |
+| ------------- | --------------------------------------- |
+| **Framework** | Next.js 14, React 18, TypeScript        |
+| **Styling**   | Tailwind CSS, Shadcn UI, Aceternity UI  |
+| **Animation** | GSAP, Framer Motion                     |
+| **3D**        | Spline Runtime                          |
+| **Email**     | Resend                                  |
+| **Misc**      | Lenis (smooth scroll), Zod, next-themes |
 
 ---
 
@@ -42,37 +42,37 @@ A jaw-dropping developer portfolio packed with interactive 3D animations, butter
 
 1. **Clone the repository:**
 
-    ```bash
-    git clone https://github.com/Naresh-Khatri/3d-portfolio.git
-    cd 3d-portfolio
-    ```
+   ```bash
+   git clone https://github.com/Naresh-Khatri/3d-portfolio.git
+   cd 3d-portfolio
+   ```
 
 2. **Install dependencies:**
 
-    ```bash
-    pnpm install
-    ```
+   ```bash
+   pnpm install
+   ```
 
 3. **Set up environment variables:**
 
-    Copy `.env.example` to `.env.local` and fill in the values:
+   Copy `.env.example` to `.env.local` and fill in the values:
 
-    ```bash
-    cp .env.example .env.local
-    ```
+   ```bash
+   cp .env.example .env.local
+   ```
 
-    | Variable | Required | Description |
-    |---|---|---|
-    | `RESEND_API_KEY` | Yes | API key from [Resend](https://resend.com) for the contact form |
-    | `NEXT_PUBLIC_WS_URL` | No | WebSocket server URL for realtime features (cursors, chat, presence) |
-    | `UMAMI_DOMAIN` | No | Umami analytics script URL |
-    | `UMAMI_SITE_ID` | No | Umami website ID |
+   | Variable             | Required | Description                                                          |
+   | -------------------- | -------- | -------------------------------------------------------------------- |
+   | `RESEND_API_KEY`     | Yes      | API key from [Resend](https://resend.com) for the contact form       |
+   | `NEXT_PUBLIC_WS_URL` | No       | WebSocket server URL for realtime features (cursors, chat, presence) |
+   | `UMAMI_DOMAIN`       | No       | Umami analytics script URL                                           |
+   | `UMAMI_SITE_ID`      | No       | Umami website ID                                                     |
 
 4. **Run the development server:**
 
-    ```bash
-    pnpm dev
-    ```
+   ```bash
+   pnpm dev
+   ```
 
 5. Open [http://localhost:3000](http://localhost:3000) and see the magic ✨
 
@@ -84,37 +84,37 @@ All personal info is centralized in [`src/data/config.ts`](src/data/config.ts). 
 
 ```ts
 const config = {
-  title: "Your Name | Your Title",
-  description: {
-    long: "Your long description for SEO...",
-    short: "Your short description...",
-  },
-  keywords: ["your", "keywords"],
-  author: "Your Name",
-  email: "you@example.com",
-  site: "https://yoursite.com",
+	title: 'Your Name | Your Title',
+	description: {
+		long: 'Your long description for SEO...',
+		short: 'Your short description...',
+	},
+	keywords: ['your', 'keywords'],
+	author: 'Your Name',
+	email: 'you@example.com',
+	site: 'https://yoursite.com',
 
-  // GitHub stars button in the header
-  githubUsername: "your-github-username",
-  githubRepo: "your-repo-name",
+	// GitHub stars button in the header
+	githubUsername: 'your-github-username',
+	githubRepo: 'your-repo-name',
 
-  social: {
-    twitter: "https://x.com/you",
-    linkedin: "https://linkedin.com/in/you",
-    instagram: "https://instagram.com/you",
-    facebook: "https://facebook.com/you",
-    github: "https://github.com/you",
-  },
+	social: {
+		twitter: 'https://x.com/you',
+		linkedin: 'https://linkedin.com/in/you',
+		instagram: 'https://instagram.com/you',
+		facebook: 'https://facebook.com/you',
+		github: 'https://github.com/you',
+	},
 };
 ```
 
 Other files you'll want to customize:
 
-| File | What to change |
-|---|---|
+| File                    | What to change                                            |
+| ----------------------- | --------------------------------------------------------- |
 | `src/data/projects.tsx` | Your projects, screenshots, descriptions, and tech stacks |
 | `src/data/constants.ts` | Skills list (name, description, icon) and work experience |
-| `public/assets/` | Your images, OG image, and project screenshots |
+| `public/assets/`        | Your images, OG image, and project screenshots            |
 
 ---
 
@@ -156,7 +156,6 @@ These features activate automatically when the `NEXT_PUBLIC_WS_URL` environment 
 
 > [!NOTE]
 > The backend API is **not open source**. This is intentional! Too many people have cloned the portfolio and claimed they built it from scratch. The realtime server stays private to keep the live experience unique make make it standout.
-
 
 ---
 
