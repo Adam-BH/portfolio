@@ -31,9 +31,9 @@ const config = {
 	githubUsername: 'Adam-BH',
 	githubRepo: 'portfolio',
 
-	get ogImg() {
-		return this.site + '/assets/seo/og-image.png';
-	},
+	// get ogImg() {
+	// 	return this.site + '/assets/seo/og-image.png';
+	// },
 	social: {
 		twitter: '',
 		linkedin: 'https://www.linkedin.com/in/adambhouri/',

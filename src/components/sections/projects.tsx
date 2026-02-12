@@ -23,9 +23,18 @@ const ProjectsSection = () => {
     <SectionWrapper id="projects" className="max-w-7xl mx-auto md:h-[130vh]">
       <SectionHeader id='projects' title="Projects" />
       <div className="grid grid-cols-1 md:grid-cols-3">
-        {projects.map((project, index) => (
-          <Modall key={project.src} project={project} />
-        ))}
+        {projects.length === 0 ? (
+          <div className="col-span-1 md:col-span-3 flex items-center justify-center py-24">
+            <div className="text-center">
+              <div className="text-2xl font-mono">Coming soon</div>
+              <p className="text-sm text-neutral-600 dark:text-neutral-500">New projects will be added shortly.</p>
+            </div>
+          </div>
+        ) : (
+          projects.map((project) => (
+            <Modall key={project.src} project={project} />
+          ))
+        )}
       </div>
     </SectionWrapper>
   );
