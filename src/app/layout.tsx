@@ -19,12 +19,12 @@ export const metadata: Metadata = {
     description: config.description.short,
     url: config.site,
     images: [
-      // {
-      //   url: config.ogImg,
-      //   width: 800,
-      //   height: 600,
-      //   alt: "Portfolio preview",
-      // },
+      {
+        url: config.ogImg,
+        width: 800,
+        height: 600,
+        alt: "Portfolio preview",
+      },
     ],
     type: "website",
   },
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: config.title,
     description: config.description.short,
-    // images: [config.ogImg],
+    images: [config.ogImg],
   },
   robots: {
     index: true,
